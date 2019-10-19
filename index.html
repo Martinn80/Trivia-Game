@@ -1,49 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Basic Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 </head>
 
 <body>
 
     <div class="container">
-        <div class="start">
-            <h1>General Knowledge Quiz</h1>
-            <h2>Welcome To The Game!</h2>
-            <a href="#">Start Quiz</a>
-        </div>
 
-        <div class="quiz">
-            <h2>Question Title</h2>
-            <ul>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
-                <li>d</li>
-            </ul>
-            <a href="#">Submit Answer</a>
-        </div>
+        <h1>Trivia Game!</h1>
 
-        <div class="summary">
-            <h2>Summary Screen</h2>
-            <p>You scored x out of y correct!</p>
-            <a href="#">Restart Quiz</a>
+        <div id="quiz" class="main-content">
+
+            <button id="start" class="btn">Start</button>
+
+            <!-- Countdown Timer -->
+            <div id="time"></div>
+
+            <!-- Questions & Answers -->
+            <div id="question1"></div>
+            <div id="answer1"></div>
+            <div id="question2"></div>
+            <div id="answer2"></div>
+            <div id="question3"></div>
+            <div id="answer3"></div>
+            <div id="question4"></div>
+            <div id="answer4"></div>
+            <div id="question5"></div>
+            <div id="answer5"></div>
+
+            <div id="submit"></div>
+
+            <!-- Results -->
+            <div id="resultsMessage"></div>
+            <div id="correct"></div>
+            <div id="incorrect"></div>
+            <div id="unanswered"></div>
+
         </div>
 
     </div>
 
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
     <script src="./assets/javascript/app.js"></script>
+
 </body>
 
 </html>
