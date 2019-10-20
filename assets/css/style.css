@@ -1,4 +1,46 @@
-/* .quiz, .summary {
-    display: none;
-} */
+* {
+    box-sizing: border-box;
+    
+}
 
+body { 
+    background: url(../images/wp4284367.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+    color: white;
+}
+
+#question1, #question2, #question3, #question4, #question5 {
+    color: white;
+}
+
+#correct, #incorrect, #unanswered {
+    font-size: 21px;
+    color: white;
+}
+
+#resultsMessage {
+    font-size: 25px;
+    color: black;
+}
+
+#quiz {
+    text-align: center;
+}
+
+#start {
+    width: 75px;
+    height: 25px;
+    color: black;
+}
+
+#done {
+    width: 75px;
+    height: 25px;
+    color: black;
+}

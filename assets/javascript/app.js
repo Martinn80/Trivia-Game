@@ -1,33 +1,33 @@
 $(document).ready(function () {
     // gobal variables
-    var number = 60;
+    let number = 45;
 
-    var intervalId;
+    let intervalId;
 
-    var correctAnswers = 0;
-    var incorrectAnswers = 0;
-    var unanswered = 0;
+    let correctAnswers = 0;
+    let incorrectAnswers = 0;
+    let unanswered = 0;
 
     // Questions array
-    var questions = [{
+    let questions = [{
         question: "Which fictional city is the home of Batman?",
-        answerList: ["Gotham City", "Asgard", "Metropolis", "Smallville"],
-        answer: 0
+        answerList: [" Smallville ", " Asgard ", " Metropolis ", " Gotham City "],
+        answer: 3
     }, {
         question: "Spinach is high in which mineral?",
-        answerList: ["Omega-3", "Vitiman B", "Iron", "Copper"],
-        answer: 2
+        answerList: [" Omega-3 ", " Vitiman B ", " Copper ", " Iron "],
+        answer: 3
     }, {
         question: "What is a Geiger Counter used to detect?",
-        answerList: ["Earthquakes", "Paranormal Activity", "Electrical Current", "Radiation"],
-        answer: 3
+        answerList: [" Radiation ", " Paranormal Activity ", " Electrical Current ", " Earthquakes "],
+        answer: 0
     }, {
         question: "Which type of dog has breeds called Scottish, Welsh and Irish?",
-        answerList: ["Toy Breed", "Working Breed", "Herding Breed", "Terrier Breed"],
-        answer: 3
+        answerList: [" Toy Breed ", " Terrier Breed ", " Herding Breed ", " Working Breed "],
+        answer: 1
     }, {
         question: "Babe Ruth is associated with which sport?",
-        answerList: ["Football", "Baseball", "Basketball", "Rugby"],
+        answerList: [" Football ", " Baseball ", " Basketball ", " Rugby "],
         answer: 1
     }];
 
@@ -35,8 +35,8 @@ $(document).ready(function () {
         // Hide Start button
         $(this).hide();
 
-        // 60 secound timer
-        $("#time").html("<h2>Time Remaining: 60 Seconds</h2>" + "<br>");
+        // 45 secound timer
+        $("#time").html("<h2>Time Remaining: 45 Seconds</h2>" + "<br>");
 
         // Start timer
         run();
